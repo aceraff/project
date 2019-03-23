@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar >
+    <button class="signButton" color="turquoise" (click)="pageUpload()">Upload</button>
+    <button class="loginButton" color="turquoise" (click)="pageLogin()">LOGIN</button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+  
+  <b><h1>Welcome To IIUM Online Shopping App</h1></b>
+  
+  <ion-input placeholder="Search Something" class="input" size="10"></ion-input>
+
+  <button class="searchButton" color="turquoise" ><ion-img src="assets/icon/search.png" class="searchImg"></ion-img></button>
+  
+  <h2 class="item">RECENT ITEM</h2>
+  
+
+  <div *ngFor="let item of datas">
+      <button class="itemButton" (click)="pageDetail(item.idPage)">
+        <img *ngIf="item.downurl" [src]="item.downurl" class="itemimg">
+        <p class="textPosition">{{item.idPage}}</p>
+      </button><br> <br>     
+  </div>      
+
+</ion-content>
+

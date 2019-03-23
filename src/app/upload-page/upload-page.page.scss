@@ -1,0 +1,55 @@
+.camera{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    background: black;
+}
+.ionTitle{
+    font-weight: bold;
+    color: white;
+}
+.ion-color-favorite{
+    --ion-color-base:turquoise;
+    --ion-color-base-rgb: turquoise;
+    --ion-color-contrast: white;
+    --ion-color-contrast-rgb: turquoise;
+    --ion-color-shade: turquoise;
+    --ion-color-tint: turquoise;
+  
+}
+
+.userInput{
+    border-bottom: 1px  solid #ccc;
+    font-size: 12px;
+    color: black;
+}
+
+.dropzone{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 200;
+    height: 300px;
+    border: 2px dashed orangered;
+    border-radius: 5px;
+    background: white;
+    margin: 10px 0;
+
+    &.hovering {
+        border: 2px solid orangered;
+        color: white !important;
+    }
+
+    .file-label{
+        font-size: 1.2em;
+    }
+}
+
+progress::-webkit-progress-value{
+    transition: width 0.1s ease;
+}
+
+img {
+    width :250px;
+}

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar class="topBar" color="turquoise">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="home"></ion-back-button>
+       </ion-buttons>
+    <ion-title class="ionTitle">Sign Up Here</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-input placeholder="Firstname" class=userInput [(ngModel)]="save.firstName" class="userInput"></ion-input>
+  <ion-input placeholder="Lastname" class=userInput [(ngModel)]="save.lastName" class="userInput"></ion-input>
+  <ion-input placeholder="Username" class=userInput [(ngModel)]="save.username" class="userInput"></ion-input>
+  <ion-input placeholder="Email" class=userInput [(ngModel)]="save.email" class="userInput"></ion-input>
+  <ion-input type="password" placeholder="Password" class="userInput" class="userInput" [(ngModel)]="save.password"></ion-input>
+  <ion-input type="password" placeholder="confirm password" class="userInput" class="userInput" [(ngModel)]="confirmPassword"></ion-input>
+
+  <ion-button expand="full" color="favorite" (click)="saveTodo()">Sign Up</ion-button>
+
+  
+</ion-content>

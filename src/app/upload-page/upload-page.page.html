@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="favorite">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="home"></ion-back-button>
+       </ion-buttons>
+
+      <ion-title class="ionTitle">
+          Upload Image
+  </ion-title>
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card-header>Your Item</ion-card-header>
+  <ion-card-content>
+      <ion-item>
+          <ion-label position="floating">Item Name</ion-label>
+          <ion-input type="text" [(ngModel)]="productName"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Prices</ion-label>
+            <ion-input type="number" [(ngModel)]="productPrice"></ion-input>
+         </ion-item>
+      <ion-item>
+          <ion-label position="floating">Descriptions</ion-label>
+            <ion-input type="text" [(ngModel)]="productDes"></ion-input>
+        </ion-item>    
+  </ion-card-content>
+
+  <ion-card-header>
+    Image Upload
+  </ion-card-header>
+  <ion-card-content>
+    <div class="camera"></div>
+    <input type="file" (change)=detectFile($event)>
+    <ion-button color="dark" shape="round" fill="outline" (click)="startUpload()">
+      Upload
+    </ion-button>
+  </ion-card-content>
+
+  <div *ngIf="percentage | async as pct">
+
+      <progress class="progress is-info" 
+                [value]="pct" 
+                max="100">        
+      </progress>
+    
+      {{ pct | number }}%
+    
+  </div>
+  
+  <div *ngIf="snapshot | async as snap">
+      {{ snap.bytesTransferred }} of {{ snap.totalBytes}} 
+    
+     
+    
+      <button (click)="task.pause()" class="button is-warning" [disabled]="!isActive(snap)">Pause</button>
+      <button (click)="task.cancel()" class="button is-danger" [disabled]="!isActive(snap)">Cancel</button>
+      <button (click)="task.resume()" class="button is-info"   [disabled]="!(snap?.state === 'paused')">Resume</button>
+    
+  </div>
+
+</ion-content>

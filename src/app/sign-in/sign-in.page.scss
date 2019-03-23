@@ -1,0 +1,67 @@
+.topBar{
+    background-color: turquoise;
+}
+
+.ionTitle{
+    font-weight: bold;
+    color: white;
+}
+
+h1{
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-style: oblique;
+}
+
+.userInput{
+    border-bottom: 1px  solid #ccc;
+}
+
+.loginButton{
+    position: relative;
+    top: 20px;
+}
+
+.bButton{
+    position: relative;
+    top: 60px;
+}
+
+.ion-color-favorite{
+    --ion-color-base:turquoise;
+    --ion-color-base-rgb: turquoise;
+    --ion-color-contrast: white;
+    --ion-color-contrast-rgb: turquoise;
+    --ion-color-shade: turquoise;
+    --ion-color-tint: turquoise;
+  
+}
+.ion-color-favorite0{
+    --ion-color-base:rgb(53, 58, 92);
+    --ion-color-base-rgb: rgb(53, 58, 92);
+    --ion-color-contrast: white;
+    --ion-color-contrast-rgb: rgb(53, 58, 92);
+    --ion-color-shade: rgb(53, 58, 92);
+    --ion-color-tint: rgb(53, 58, 92);
+  
+}
+.ion-color-favorite1{
+    --ion-color-base: rgb(100, 105, 124);
+    --ion-color-base-rgb: rgb(100, 105, 124);
+    --ion-color-contrast: white;
+    --ion-color-contrast-rgb: rgb(100, 105, 124);
+    --ion-color-shade: rgb(100, 105, 124);
+    --ion-color-tint: rgb(100, 105, 124);
+  
+}
+.ion-color-favorite2{
+    --ion-color-base: rgb(163, 195, 224);
+    --ion-color-base-rgb: rgb(163, 195, 224);
+    --ion-color-contrast: white;
+    --ion-color-contrast-rgb: rgb(163, 195, 224);
+    --ion-color-shade: rgb(163, 195, 224);
+    --ion-color-tint: rgb(163, 195, 224);
+  
+}

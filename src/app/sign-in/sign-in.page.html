@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar class="topBar" color="turquoise">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="home"></ion-back-button>
+       </ion-buttons>
+    <ion-title class="ionTitle">Login Here</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-input placeholder="Username or Email" class=userInput [(ngModel)]="email"></ion-input>
+  <ion-input type="password" placeholder="Password" class="userInput" [(ngModel)]="password"></ion-input>
+
+  <ion-button type="submit" expand="full" class="loginButton" color="favorite" (click)="login()">Log in</ion-button>
+
+  <h1>OR</h1>
+
+  <ion-button expand="full" class="bButton" color="favorite0">LOGIN WITH FACEBOOK</ion-button>
+  <ion-button expand="full" class="bButton" color="favorite1">LOGIN WITH TWITTER</ion-button>
+  <ion-button expand="full" class="bButton" color="favorite2">LOGIN WITH GOOGLE</ion-button>
+</ion-content>

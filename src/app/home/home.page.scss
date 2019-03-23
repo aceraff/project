@@ -1,0 +1,154 @@
+h1{
+    font-size: 20pt;
+    font-family: 'Berlin Sans FB Demi';
+    color: rgb(51, 66, 100);
+    position: relative;
+    text-align: center;
+    
+}
+
+
+.input{
+
+    position: relative;
+    top:30px;
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-bottom: 1px  solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.searchButton{
+    border: none;
+    padding: 20px;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 12px;
+    background-color:turquoise;
+    position:relative;
+    top: -18px;
+    left: 230px;
+    width: 45px;
+    height: 40px;
+    transition-duration: 0.4s;
+    box-shadow: 0px 2px 5px 0px #888888;
+}
+
+.searchButton:active{
+    transition: 0.4s;
+    box-shadow: 0px 5px 15px #888888;
+}
+
+.searchImg{
+    position: relative;
+    color: black;
+    top: -13px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.loginButton{
+    text-align: center;
+    color:white;
+    font-weight: 600;
+    font-style: oblique;
+    border: none;
+    padding: 0px;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 12px;
+    background-color:turquoise;
+    position:relative;
+    left: 124px;
+    width: 80px;
+    height: 35px;
+    transition-duration: 0.4s;
+    box-shadow: 0px 2px 5px 0px #888888;
+
+}
+.loginButton:active{
+    transition: 0.4s;
+    box-shadow: 0px 5px 15px #888888;
+}
+
+.signButton{
+    text-align: center;
+    font-weight:600;
+    color: white;
+    font-style: oblique;
+    border: none;
+    padding: 0px;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 12px;
+    background-color:turquoise;
+    position:relative;
+    width: 80px;
+    height: 35px;
+    transition-duration: 0.4s;
+    box-shadow: 0px 2px 5px 0px #888888;
+
+}
+
+.signButton:active{
+    transition: 0.4s;
+    box-shadow: 0px 5px 15px #888888;
+}
+
+.item{
+    position: relative;
+    bottom:20px;
+    font-size:12px;
+    color: grey;
+    
+    text-decoration-color: black;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.itemimg{
+    position: relative;
+    right: 59px;
+    width: 140px;
+    height:100%;
+    align-items: left;
+}
+
+.itemButton{
+    position: relative;
+    bottom:20px;
+    width: 100%;
+    height:145px;
+    box-shadow: 0px 0px 5px 0px #888888;
+    background-color: rgb(226, 223, 223);
+    transition-duration: 0.4s;
+    float: inherit;
+}
+
+.itemButton:hover{
+    transition: 0.4s;
+    box-shadow: 0px 0px 10px 0px #888888;
+ 
+}
+
+.itemButton:active{
+    transition: 0.4s;
+    box-shadow: 0px 0px 20px 0px #888888;
+}
+
+.textButton{
+    position:relative;
+    bottom: -30px;
+}
+
+.textPosition{
+    position: relative;
+    bottom:110px;
+    left: 68px;
+    z-index: 1;
+}
+
